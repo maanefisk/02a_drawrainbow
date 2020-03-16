@@ -4,14 +4,15 @@
 
 <body>
 
-    <div id="knapp" onclick="trykke()"><img src="rainbowline.png" /></div>
+    <div id="knapp" onmouseover="trykke()" onmouseout="trykke()"><img src="rainbowline.png" /></div>
     <div id="here"></div>
+    
 
 
     
 <script>
  function trykke() {
-        document.getElementById("here").innerHTML += document.getElementById("knapp").innerHTML ;
+        document.getElementById("here").innerHTML += document.getElementById("knapp").innerHTML + '<br>';
     }
 
 
