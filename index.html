@@ -1,17 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
 <link rel="stylesheet" href="stylesheet.css">
 
 <body>
 
-    <img class="rainbow" onmouseover="addmore()" onmouseout="addmore()" src='rainbowline.png'/>
+    <div id="knapp" onclick="trykke()"><img src="rainbowline.png" /></div>
+    <div id="here"></div>
 
 
+    
 <script>
-
-function addmore() {
-document.getElementById('rainbow').innerHTML += document.getElementById('rainbow').innerHTML;
-}
+ function trykke() {
+        document.getElementById("here").innerHTML += document.getElementById("knapp").innerHTML ;
+    }
 
 
 </script>
 
 </body>
+
+</html>
